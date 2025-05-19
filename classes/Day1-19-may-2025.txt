@@ -6,6 +6,7 @@ SAD
 S - System Engineering
 A - Analysis
 D - Design
+TMC
 T - Testing
 M - Maintenance
 C - Coding
@@ -92,6 +93,95 @@ commands
 5. git branch -M main
 6. git remote add origin https://github.com/raghuprasadks/gitdemoaiml.git
 7. git push -u origin main
+
+Deploy code
+
+web server
+
+Configure live server in visual studio code
+
+Visual Studio code->extensions->live-server->install
+right bottom corner->live server link is enabled
+click on the link
+
+ipconfig
+copy the ip address
+replace localhost with ipaddress
+
+Steps for deploying on GitHub
+1.open GitHub repository
+2. click on settings
+3. click on pages on the side bar (left side)
+4. Under branch select main and save.
+5. wait for some time for deployment to complete
+6. refresh the page to get the hosted link
+
+it deploys using githubactions
+
+Modify existing index.html
+
+git add .
+git status
+git commit -m "modified index.html"
+git push
+
+Download and install
+
+nginx
+
+https://nginx.org/en/download.html
+stable version
+
+set the path
+
+open terminal
+
+start nginx
+nginx -s stop
+nginx -s quit
+
+in browser type 
+localhost
+you will get 
+welcome to nginx! message
+
+
+Download and install docker desktop
+
+virtualization
+
+https://learn.microsoft.com/en-us/windows/wsl/install-manual
+
+docker commands
+
+1. check version
+docker --version
+docker images
+docker pull nginx
+docker ps
+
+2. create account with docker hub
+https://hub.docker.com/
+
+3. run the docker image
+docker pull nginx
+docker run --name my-nginx -p 8080:80 -d nginx
+docker run --name my-nginx2 -p 8090:80 -d nginx
+docker images
+docker ps
+
+docker run --name my-nginx -p 8080:80 -v  /d/kaushalya/consultancy/nhce/2025/nhce/aiml/dockernkubernetes/sandbox/programs/gitdemo:/usr/share/nginx/html:ro -d nginx
+
+
+
+
+
+
+
+
+
+
+
  
 
 
