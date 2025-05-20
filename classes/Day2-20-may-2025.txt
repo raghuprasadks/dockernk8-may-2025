@@ -42,31 +42,25 @@ post - http://localhost:5000/api/products
 id,name,desc,supplier and price
 
 Post method this should save products to a productslist
-
-
-
-
-
-
-
-
-
-
 Test it locally.
 Create image 
 Push to dockerhub
 
-
-
-
-
-
-
-
-
-
-
 4. Development of  CRUD application using python flask and MySQL
 Deployment on docker
+
+Pre-requisites
+MySQL server
+MySQL server community edition
+https://dev.mysql.com/downloads/mysql/
+MySQL workbench
+create connection
+create a schema - dockerdb
+create users table
+having following columns
+id - int, pk,ai
+name - varchar
+email - varchar
+
 5. Assignment
 
