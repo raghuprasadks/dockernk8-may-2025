@@ -169,6 +169,10 @@ docker run --name my-nginx -p 8080:80 -d nginx
 docker run --name my-nginx2 -p 8090:80 -d nginx
 docker images
 docker ps
+docker stop 01900ff0c47f
+docker ps -a
+docker rm 01900ff0c47f
+
 
 docker run --name my-nginx -p 8080:80 -v  /d/kaushalya/consultancy/nhce/2025/nhce/aiml/dockernkubernetes/sandbox/programs/gitdemo:/usr/share/nginx/html:ro -d nginx
 
