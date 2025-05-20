@@ -1,15 +1,25 @@
 # filepath: d:\kaushalya\consultancy\nhce\2025\nhce\aiml\dockernkubernetes\sandbox\programs\flaskdemo\app.py
 from flask import Flask, request, jsonify
 import pymysql
-
+import os
 app = Flask(__name__)
-
+"""
 def get_db_connection():
     return pymysql.connect(
         host='127.0.0.1',
         user='root',
         password='kaushalya@2017',
         db='dockerdb',
+        cursorclass=pymysql.cursors.DictCursor
+    )
+
+"""
+def get_db_connection():
+    return pymysql.connect(
+        host=os.environ.get('DB_HOST', '127.0.0.1'),
+        user=os.environ.get('DB_USER', 'root'),
+        password=os.environ.get('DB_PASSWORD', ''),
+        db=os.environ.get('DB_NAME', ''),
         cursorclass=pymysql.cursors.DictCursor
     )
 
