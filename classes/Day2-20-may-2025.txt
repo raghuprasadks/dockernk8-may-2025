@@ -64,5 +64,16 @@ email - varchar
 
 docker-compose up --build
 
+docker-compose down -v
+docker-compose up --build
+
+docker-compose exec db bash
+
+mysql -u root -p
+SHOW DATABASES;
+USE dockerdb;
+SHOW TABLES;
+
+
 5. Assignment
 
