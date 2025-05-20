@@ -1,0 +1,72 @@
+Agenda:
+1. Revision of docker
+2. Development of web api using python flask and deploy it on docker.
+Flask is a micro webframework.
+Used for API development
+Helloworld
+create programs/flaskapp folder
+pre-requisites
+python should be installed
+path should be set
+python --version
+open flaskapp in vs code
+
+
+docker build -t myfirstflaskapp .
+
+3. Pushing docker image to docker hub
+create an account with docker hub
+https://hub.docker.com/
+in command prompt
+
+docker login
+
+docker build -t raghuprasadkonandur/myfirstflaskapp .
+
+docker push raghuprasadkonandur/myfirstflaskapp
+
+interactive mode
+
+docker exec -it hungry_booth bash
+
+https://jsonplaceholder.typicode.com/
+
+4. Create following api's using flask.
+Get- http://localhost:5000/api/products
+
+
+Get method this should list all the products
+
+post - http://localhost:5000/api/products
+
+id,name,desc,supplier and price
+
+Post method this should save products to a productslist
+
+
+
+
+
+
+
+
+
+
+Test it locally.
+Create image 
+Push to dockerhub
+
+
+
+
+
+
+
+
+
+
+
+4. Development of  CRUD application using python flask and MySQL
+Deployment on docker
+5. Assignment
+
