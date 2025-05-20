@@ -62,5 +62,7 @@ id - int, pk,ai
 name - varchar
 email - varchar
 
+docker-compose up --build
+
 5. Assignment
 
