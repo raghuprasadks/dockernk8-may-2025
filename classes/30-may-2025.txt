@@ -1,0 +1,138 @@
+Agenda
+1. Monitor and alert k8s clusters
+Graphana and Prometheus 
+
+Grafana and Prometheus are both popular open-source tools used in monitoring and observability, but they serve different purposes and are often used together:
+
+Prometheus
+Purpose: Monitoring and alerting system.
+Function: Collects and stores metrics as time series data (metrics are pulled from configured targets at given intervals).
+Features:
+Powerful query language (PromQL)
+Built-in alerting
+Data retention and storage
+Scrapes metrics from endpoints
+
+Grafana
+Purpose: Visualization and analytics platform.
+Function: Connects to various data sources (including Prometheus) and visualizes data in dashboards and graphs.
+Features:
+Rich, customizable dashboards
+Supports multiple data sources (Prometheus, InfluxDB, MySQL, etc.)
+Alerting and sharing capabilities
+User-friendly interface
+
+
+Step 1 - Create EC2 instance with Ubuntu OS
+Step 2 - https://www.devopshint.com/monitor-kubernetes-cluster-using-prometheus-and-grafana/
+
+2. Recap
+
+Git /GitHub
+
+liveserver 
+GitHub actions
+
+Devops
+CI/CD
+
+Agile process
+Scrum 
+
+Virtualization  
+Dockerization 
+Docker desktop
+Linux - WSL
+
+# Check Docker version
+docker --version
+
+# List all running containers
+docker ps
+
+# List all containers (including stopped)
+docker ps -a
+
+# List all images
+docker images
+
+# Pull an image from Docker Hub
+docker pull <image_name>
+
+# Run a container
+docker run -d -p <host_port>:<container_port> --name <container_name> <image_name>
+
+# Stop a running container
+docker stop <container_name_or_id>
+
+# Remove a container
+docker rm <container_name_or_id>
+
+# Remove an image
+docker rmi <image_name_or_id>
+
+# View logs of a container
+docker logs <container_name_or_id>
+
+# Execute a command inside a running container
+docker exec -it <container_name_or_id> /bin/bash
+
+
+Kubernetes commands
+# View cluster information
+kubectl cluster-info
+
+# List all nodes in the cluster
+kubectl get nodes
+
+# List all pods in the default namespace
+kubectl get pods
+
+# List all pods in all namespaces
+kubectl get pods -A
+
+# List all services
+kubectl get svc
+
+# Create resources from a YAML file
+kubectl apply -f <filename>.yaml
+
+# Delete resources from a YAML file
+kubectl delete -f <filename>.yaml
+
+# Get detailed information about a pod
+kubectl describe pod <pod-name>
+
+# View logs from a pod
+kubectl logs <pod-name>
+
+# Execute a command inside a running pod
+kubectl exec -it <pod-name> -- /bin/bash
+
+# Expose a deployment as a service
+kubectl expose deployment <deployment-name> --type=NodePort --port=80
+
+# Scale a deployment
+kubectl scale deployment <deployment-name> --replicas=3
+
+# Delete a pod
+kubectl delete pod <pod-name>
+
+
+EKS (Amazon Elastic Kubernetes Service) is a managed Kubernetes service provided by AWS. It simplifies running Kubernetes clusters on AWS by handling the control plane (master nodes), scalability, and security.
+
+Key Features of EKS
+Managed Control Plane: AWS manages and scales the Kubernetes control plane.
+Integration: Works seamlessly with other AWS services (IAM, VPC, CloudWatch, etc.).
+High Availability: Multi-AZ support for fault tolerance.
+Security: Integrated with AWS IAM for authentication and authorization.
+Automatic Upgrades & Patching: AWS handles Kubernetes version upgrades and security patches.
+
+ECR (Elastic Container Registry) is a fully managed container image registry service by AWS. It allows you to store, manage, and deploy Docker container images securely. ECR integrates with AWS services like ECS and EKS, making it easy to use container images in your cloud applications.
+
+Mini project
+Deployment of Netflix clone on Kubernetes
+https://aakibkhan1.medium.com/project-4-deploy-netflix-clone-on-kubernetes-9ae6091b88bd
+ 
+3. Feedback and MCQ
+

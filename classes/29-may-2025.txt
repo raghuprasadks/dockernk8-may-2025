@@ -1,0 +1,35 @@
+Agenda:
+
+1. Setup Kubernetes on AWS EC2 instance
+
+Microservices
+
+2. Cloud Service providers
+managed Kubernetes services
+
+AWS - EKS - Elastic Kubernetes Service
+
+public/private 
+https://docs.aws.amazon.com/eks/latest/userguide/what-is-eks.html
+
+aws cli - AWS Command line interface
+
+credentials 
+
+eksctl CLI
+
+kubectl
+
+setup EKS cluster, 
+fargate - serverless
+loadbalancer
+
+deploy an application on EKS
+
+
+
+
+
+
+
+
